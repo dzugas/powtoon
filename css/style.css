@@ -1,0 +1,322 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'MullerRegular', sans-serif;
+    src: url('../fonts/MullerRegular.eot');
+    src: url('../fonts/MullerRegular.eot?iefix') format('eot'),
+    url('../fonts/MullerRegular.woff') format('woff'),
+    url('../fonts/MullerRegular.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VisbyBold', sans-serif;
+    src: url('../fonts/VisbyCFBold.eot');
+    src: url('../fonts/VisbyCFBold.eot?iefix') format('eot'),
+    url('../fonts/VisbyCFBold.woff') format('woff'),
+    url('../fonts/VisbyCFBold.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VisbyCFLight', sans-serif;
+    src: url('../fonts/VisbyCFLight.eot');
+    src: url('../fonts/VisbyCFLight.eot?iefix') format('eot'),
+    url('../fonts/VisbyCFLight.woff') format('woff'),
+    url('../fonts/VisbyCFLight.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+header {
+    width: 100%;
+    height: 1080px;
+    background: url("../img/magnet.png") no-repeat, linear-gradient(to bottom, #f9e9a7, #63c9c4);
+    background-position: right 0px;
+
+}
+
+.logo {
+    display: block;
+    margin-left: 177px;
+}
+
+.slogan {
+    display: block;
+    width: 887px;
+    height: 290px;
+    font-family: 'MullerRegular';
+    font-weight: lighter;
+    margin-left: 190px;
+    margin-top: 220px;
+    margin-bottom: 79px;
+}
+
+.slogan p {
+    font-size: 32px;
+    color: #44a09b;
+    margin-bottom: 35px;
+}
+
+.slogan h1 {
+    font-size: 65px;
+    font-weight: 100;
+}
+
+.btn_top {
+    background-color: #ffffff;
+    width: 825px;
+    height: 212px;
+    border-radius: 0 100px 100px 0;
+    color: #ff8141;
+}
+
+.btn_top p {
+    font-family: 'MullerRegular';
+    font-size: 28px;
+    padding-top: 45px;
+    padding-left: 130px;
+    margin-bottom: 20px;
+}
+
+.btn_top input[type="submit"] {
+    width: 495px;
+    height: 66px;
+    background-color: #ff8141;
+    font-size: 28px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'MullerRegular';
+    font-weight: bold;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    margin-left: 130px;
+}
+
+.btn_top input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #FF8C00;
+}
+
+.scroll {
+    border-top: solid 41px white;
+    border-right: solid 30px transparent;
+    border-left: solid 30px transparent;
+    display: block;
+    width: 0;
+    height: 0;
+    position: relative;
+    margin: 0 auto;
+    top: 75px;
+}
+
+.scroll .triangle {
+    position: absolute;
+    border-top: solid 30px #69cac3;
+    border-right: solid 20px transparent;
+    border-left: solid 20px transparent;
+    top: -37px;
+    left: -20px;
+}
+
+.scroll p {
+    position: absolute;
+    width: 120px;
+    top: -65px;
+    left: -59px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'MullerRegular';
+    font-size: 16px;
+}
+
+.main .webinar {
+    position: relative;
+    display: inline-block;
+    width: 1085px;
+    background: url("../img/play.png") no-repeat;
+    vertical-align: top;
+}
+
+.shadow {
+    width: 1085px;
+    height: 915px;
+    background: #fff;
+    opacity: 0.5;
+}
+
+.circle {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: black;
+    border-radius: 90px;
+    opacity: 0.5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.play {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 50px solid white;
+    border-bottom: 25px solid transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.arrow {
+    position: absolute;
+    top: 510px;
+    left: 590px;
+}
+
+
+.main .advantages {
+    display: inline-block;
+    width: 600px;
+    padding-top: 130px;
+    padding-left: 130px;
+}
+
+.advantages h2 {
+    font-size: 42px;
+    color: #3a4a62;
+    font-family: 'VisbyBold';
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.advantages .list ul {
+    width: 610px;
+}
+
+.list li {
+    position: relative;
+    list-style-type: none;
+    font-size: 22px;
+    color: #575656;
+    font-family: 'VisbyCFLight';
+    list-style-position: outside;
+    margin-bottom: 10px;
+
+}
+
+.list li:before {
+    position: absolute;
+    color: #fc5648;
+    content: "\3E";
+    left: -20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.list ul li:last-child:before {
+    content: "\2665";
+    left: -30px;
+}
+
+.list ul li:last-child {
+    margin-top: 65px;
+}
+
+.btn_main input[type="submit"] {
+    width: 495px;
+    height: 66px;
+    background-color: #ff8141;
+    font-size: 28px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'MullerRegular';
+    font-weight: bold;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    margin-top: 65px;
+}
+
+.btn_main input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #FF8C00;
+}
+
+footer {
+    width: 100%;
+    height: 205px;
+    background-color: #273d50;
+    font-size: 53px;
+    text-transform: uppercase;
+    color: #fefdfd;
+    font-family: 'VisbyBold';
+    font-weight: bolder;
+    text-align: center;
+}
+
+footer p {
+    display: block;
+    padding-top: 95px;
+
+}
+
+
+
+
+
+@media (max-width: 1280px) {
+
+
+
+    .slogan {
+        margin-left: 60px;
+        width: 600px;
+
+    }
+
+    .slogan h1 {
+        font-size: 40px;
+    }
+
+    .scroll {
+        margin: 0 auto;
+    }
+
+    .main {}
+
+    .main .webinar {
+        width: 50%;
+
+        background-size: auto;
+    }
+
+    .main .advantages {
+        width: 29%;
+    }
+    .advantages .list ul {
+        width: 80%;
+    }
+
+    .shadow {
+        width: 100%;
+    }
+
+
+
+
+
+
+}
